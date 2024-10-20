@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <section class="header" style="background-image: linear-gradient(rgba(4,9,30,2));">
+    <section class="header" >
         <nav id="drawer">
             <div class="nav-links nav1-links" id="navLinks">
                 <button class="cbtn" onclick="hidemenu()">x</button>
@@ -27,7 +27,7 @@
                 </div>
 
                 <ul>
-                    <li><a href="">HOME</a></li>
+                    <li><a href="https://www.shivraj.edu.in/" onclick="homenone()">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
                     <li><a href="">COURSE</a></li>
                     <li><a href="">BLOG</a></li>
@@ -82,6 +82,10 @@
     </section>
     <script>
         let navLinks = document.getElementById("drawer");
+        let home = document.getElementsByClassName("header");
+        function homenone(){
+            home.style.display = "none";
+        }
         function showmenu() {
             //  navLinks.style.right = "0";
             navLinks.style.display = "block";
